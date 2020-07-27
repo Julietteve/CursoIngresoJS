@@ -4,10 +4,14 @@ B.	Al ingresar una temperatura en Centígrados debemos mostrar la temperatura en
 */
 function FahrenheitCentigrados () 
 {
-	
+    let temperatura= parseInt(document.getElementById("txtIdTemperatura").value)
+    let fahrenheit = ((temperatura -32)*5/9).toFixed(2)
+    alert (`${temperatura}° Fahrenheit son ${fahrenheit}° Centigrados`)
 }
 
 function CentigradosFahrenheit () 
 {
-	
+    let temperatura= parseInt(document.getElementById("txtIdTemperatura").value)
+    let fahrenheit = (temperatura * 9/5) + 32
+    alert (`${temperatura}° Centigrados son ${fahrenheit}° Fahrenheit`)
 }

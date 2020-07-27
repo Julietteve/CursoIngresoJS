@@ -6,10 +6,15 @@ y una de las cuatro operaciones básicas (suma, resta,
  el resultado de la operación y presionar el botón Aceptar.
 se debe informar si el resultado es el correcto o no.
 */
-var respuesta;
+let respuesta;
+let numeroUno;
+let numeroDos;
+let operacion;
 function comenzar()
 {
-
+    numeroUno= Math.floor(Math.random()* 10 + 1);
+    numeroDos= Math.floor(Math.random()* 10 + 1);
+    operacion 
 	
 
 }//FIN DE LA FUNCIÓN
