@@ -1,13 +1,20 @@
 function mostrar()
 {
-	var contador;
-	var acumulador;
-	var numeroIngresado;
+	let numero;
+	let suma = 0;
+	let promedio;
+	let i = 0;
 
-	contador=0;
-	acumulador=0;
+	while ( i < 5){
+		numero = parseInt(prompt("Ingrese un numero"));
+		i++;
+		suma += numero;
+		console.log("dentro del log " + i)
+	}
+	console.log("fuera del log " + i)
+	promedio = suma/i;
+	document.getElementById("txtIdSuma").value = suma;
+	document.getElementById("txtIdPromedio").value  = promedio;
+
 	
-	
-	txtIdSuma.value=acumulador;
-	txtIdPromedio.value=acumulador/5;
 }//FIN DE LA FUNCIÓN

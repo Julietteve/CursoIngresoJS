@@ -2,7 +2,7 @@ function mostrar()
 {
 	const BASE = 15000;
 	let precioFinalConAumento;
-	let precioFinalConDescuento
+	let precioFinalConDescuento;
 	let descuento;
 	let aumento;
 	let estacion = document.getElementById("txtIdEstacion").value;
@@ -39,7 +39,7 @@ function mostrar()
 		
 		precioFinalConAumento = BASE + (BASE * aumento/100)
 		precioFinalConDescuento = BASE - (BASE * descuento/100)
-
+		
 		if (aumento){
 			alert( `El monto final es de $ ${precioFinalConAumento}`)
 		}else{
